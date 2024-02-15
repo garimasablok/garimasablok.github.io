@@ -1,85 +1,245 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>MY PROFILE</title>
-</head>
-<body>
-       <div class="head">garimasablok
-        <div class="nav">
-        <ul>
-            <li><a href="#im">Home</a></li>
-            <li><a href="#About">About</a></li>
-            <li><a href="#para6">Portfolio</a></li>
-            <li><a href="#foot">Contact</a></li>
-        </ul>
-    </div>
-       </div>
-       <div id="banner">
-        <h1>GARIMA SABLOK</h1>
-        <h2>Software Developer<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; AND<br> WEB DEVELOPER</h2>
-        <div><img id="im" src="images/web.jpg"> </div>    
-    </div>
-    <section>
-        <div id="About">
-            <h1 id="para1">About Myself</h1>
-            <p id="para2">I'm a aspiring software developer and tryind to learn new skills. I Have Done my
-                bachelor's degree in computer science from the CCS University.</p>
-            <p id="para2">______________________________________________________</p>
-            <p id="para3">*Web Developer <br><br>*Software Developer<br><br>*Front End Developer<br><br>*Back End
-                Developer</p>
-            <p id="para4">*SQL <br><br> *Salesforce<br><br>*c language</p>
-            <p id="p2">______________________________________________________</p>
-            <p id="para5">I'm seeking for challenging opportunities where i can fully use my skills for the success of
-                the organization.<br> Am open to work as a software developer and Data Scientist.</p>
-        </div>
-        </section>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:  rgb(2, 23, 42);
+}
+.head{
+    height: 15vh;
+    width: 100%;
+    padding: 2% 5%;
+    background-color: black;
+    color: aliceblue;
+    font-size: xx-large; 
+    display: flex;
+    position: fixed;
+    top: 0%;
 
-        <div class="Portfolio">
-            <div id="main2">
-                <p id="para6">PORTFOLIO</p>
-                <img id="img1" src="images/bg3.jpg">
-           </div>
-        
-           <div id="boxes">
-             <section class="one  black">
-                 <bold>RESUME BUILDER</bold><br><br><br><br>
-                 <p id="para7">This is a resume builder website. Created using HTML, CSS and java scirpt. this
-                    will help you to create your resume in a very easy way.</p>
-             </section>
-             <section class="one  white">
-                 <bold>Amazon website clone</bold><br><br><br><br>
-                 <p id="para7">This is a clone of the Amazon website. Created using HTML and CSS on the
-                    visual studio code platform.
-                 </p>
-     
-             </section>
-             <section class="one  blue">
-                 <bold>My portfolio Site</bold><br><br><br><br>
-                 <p id="para7">This website created using HTML, CSS and react. website is deployed using
-                    Microsoft azure platform.
-                 </p>
-             </section>
-             <section class="one  green">
-                 <bold>Flipkart website clone</bold><br><br><br><br>
-                 <p id="para7">This is a clone of the Flipkart website. Created using HTML and 
-                     CSS on the visual studio code platform.
-                </p>
-             </section>
-          </div>
-     
-        </div>
-        <div class="footer">
-            <div id="foot">
-            <a href="#"><img id="pic1" src="images/gmail.jpg" alt="Gmail"></a>
-            <a href="#"><img id="pic1" src="images/github.jpg" alt="Github"></a>
-            <a href="#"><img id="pic1" src="images/instagram symbol.jpg" alt="Instagram"></a>
-            <a href="#"><img id="pic1" src="images/linkin.jpg" alt="Linkined"></a></div>
-            <p id="para10">Created By Garima Sablok</p>
-            <p id="para11">Copyright &copy; 2023 Your Website</p>
-        </div>
-</body>
-</html>
+}
+.nav{
+    height: 10vh;
+    width: 50%;
+    margin-left: 50%;
+    justify-content: space-between;
+}
+.nav ul{
+    display: flex;
+    justify-content: flex-end;
+    
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.nav ul li{
+     padding-left: 10%;
+     list-style: none;  
+}
+#banner{
+    height: 83vh;
+    width: 90%;
+    /* border: 1px solid; */
+    margin-left: 5%;
+    margin-top: 2vh;
+    border-radius: 30px;
+    background-color: whitesmoke;
+    margin-top: 16vh;   
+}
+.nav ul li a:hover{
+    background-color: white;
+    color: black;
+    text-align: center;
+    border-radius: 50px;
+    font-size: 40px;
+}
+#banner h1{
+    font-size: 100px;
+    font-family:   Imprint MT Shadow;
+    color: black;
+    text-shadow: 1px 2px 5px  blue;
+    padding: 2% 2%;
+}
+#banner h2{
+    font-size: 60px;
+    /* color: whitesmoke;
+    text-shadow: 1px 2px 10px  darkblue; */
+    padding-left: 10%;
+    color: black;
+    text-shadow: 1px 2px 5px  blue;
+    padding-top: 2%;
+    font-family: cursive;
+
+    
+}
+#im{
+    height: 400px;
+    width: 40%;
+    border-radius: 50%;
+    margin-left: 55%;
+    margin-top: -280px;
+
+}
+
+section{
+    height: 630px ;
+    width: 100%;
+    /* border: 1px solid; */
+}
+#About {
+    height: 550px;
+    width: 1100px;
+    background-color: whitesmoke;
+    box-shadow:4px 4px black;
+    border-radius: 15px;
+    margin-left: 200px;
+    margin-top: 3%;
+
+}
+
+#para1 {
+    text-align: center;
+    color: black;
+    font-size: 50px;
+    
+}
+
+#para2 {
+    color: lightslategray black;
+    font-size: xx-large;
+    text-align: center;
+    padding-top: 1%;
+}
+#p2{
+    color: lightslategray black;
+    font-size: xx-large;
+    text-align: center;
+    padding-top: 4%;
+}
+
+#para3 {
+    font-size: x-large;
+    margin-left: 10%;
+}
+
+#para4 {
+    font-size: x-large;
+    margin-left: 10%;
+    margin-left: 600px;
+    margin-top: -180px;
+}
+
+#para5 {
+    text-align: center;
+    font-size: larger;
+    padding-top: 2%;
+}
+.Portfolio{
+    height: 630px;
+    width: 100%;
+    /* border: 1px solid; */
+}   
+#main2{
+    height: 620px;
+    width: 100%;
+    margin-top: 2%;
+    /* border: 1px solid red; */ 
+    background-color:  rgb(2, 23, 42);
+}
+#box3{
+    height: 400px;
+    width: 600px;
+    /* border: 1px border red; */
+   
+}
+#para6{
+    color:white;
+    font-size: 80px;
+    font-family:   Imprint MT Shadow;
+    text-align: center;
+}
+#img1{
+    left: 20px;
+    height: 490px;
+    width: 550px;
+    border-radius: 100px;
+    margin-left: 2%;
+    margin-top: 1%;
+    
+}
+.boxex{
+    height: 400px;
+    width: 400px;
+    /* border: 1px solid; */
+}
+
+.one{
+    height: 200px;
+    width: 400px;
+    /* border: 1px solid whitesmoke; */
+    position: absolute;
+    top: 210%;
+    left: 650px;
+    border-radius: 100px;
+    box-shadow: 1px 2px 3px white;
+}
+.black{
+    left: 1050px;
+}
+.white{
+    left: 630px;
+}
+.blue{
+    margin-top: 210px;
+    left: 1050px;
+}
+.green{
+    margin-top: 210px;
+    left: 630px; 
+}
+bold{
+    color: white;
+    position: absolute;
+    left: 130px;
+    top: 20px;
+    font-size: x-large;
+}
+#para7{
+    color: aliceblue;
+    font-size: large;
+    text-align: center;
+}
+.footer{
+    height: 30vh;
+    width: 100%;
+    
+}
+#pic1{
+    height: 40px;
+    width: 40px;
+    margin-left: 90px;
+    margin-top: 2%;
+}
+#para10{
+    color: aliceblue;
+    font-size: 30px;
+    text-align: center;
+}
+#para11{
+    margin-top: 15vh;
+    margin-left: 84%;
+    color: aliceblue;
+    
+}
+#foot{
+    height: 10vh;
+    width: 40%;
+    margin: auto;
+    margin-top: 100px;
+}
+
+
+
 
