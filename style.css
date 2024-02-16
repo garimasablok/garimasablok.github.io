@@ -225,8 +225,89 @@ hr{
 #foot{
     height: 10vh;
     width: 40%;
+    /* border: 1px solid wheat; */
     margin: auto;
     margin-top: 50px;
 }
+@media(max-width:1080px){
+    .nav{
+        margin-left: 35%;
+    }
+    #banner h2{
+        font-size: 50px;
+        padding-left: 1%;
+    }
+    #im{
+        margin-top: -200px;
+    }
+    #para{
+        font-size: smaller;
+    }
+    #foot{
+        width: 80%;
+        margin-left: 20%;
+    }
+
+}
+@media(max-width:650px){
+    /* .head p{
+        font-size: large;
+    } */
+    
+    .nav{
+        margin-top: 15%;
+        margin-left: 10%;
+
+    }
+    #banner h1{
+    font-size: 50px;
+    text-align: center;
+    }
+    #banner h2{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    #im{
+        margin-top: 0px;
+        margin-left: 40px;
+        height: 300px;
+        width: 300px;
+    }
+    .box1{
+        width: 90%;
+    } 
+    .box1 p{
+        font-size: 24px;
+    }
+    .portfolio p{
+        font-size: 50px;
+    }
+    .portfolio img{
+        display: none;
+    }
+    .main{
+        width: 100%;
+    }
+    .hor h1{
+        font-size: x-large;
+    }
+    .hor p{
+        font-size: large;
+    }
+    #foot{
+        margin-left: 0;
+        width: 100%;
+    }
+    #pic1{
+        margin-left: 50px;
+        display: block;
+        float: left;
+    }
+    #para11{
+        margin-left: 40%;
+    }
+}
+
+
 
 
