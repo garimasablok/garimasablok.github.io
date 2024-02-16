@@ -254,9 +254,11 @@ hr{
         font-size: large;
     } */
     
+    
     .nav{
         margin-top: 15%;
         margin-left: 10%;
+        font-size: 30px;
 
     }
     #banner h1{
